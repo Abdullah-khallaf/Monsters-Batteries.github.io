@@ -1,0 +1,141 @@
+header{
+    nav{
+        position: fixed;
+        .navbar-brand{
+            margin-right: $margin + 5%;
+            font: 28px $mainFont;
+        }
+        ul{
+            width:100%;
+            li{
+                font: 20px $secondFont;
+                width: 100%;
+            }
+        }
+    }
+}
+main{
+    #slider{
+        @include flex;
+        margin:1% 0% 0% 0%;
+        img{
+            width:25%;
+            height:auto;
+            transform: rotate(-90deg);
+        }
+    }
+    #Batteries{
+        @include flex;
+        flex-direction: column;
+        margin-top:$margin;
+        .battery{
+            @include flex;
+            flex-direction: column;
+            margin-bottom: 1%;
+            h2{
+                font:36px $mainFont;
+                color:$color1;
+            }
+            div{
+                @include flex;
+                flex-direction: row;
+                justify-content: space-around;
+                img{
+                    height:230px;
+                    width:auto;
+                    border-radius: 5px;
+                }
+                p{
+                    width:50%;
+                    font:22px $secondFont;
+                    line-height: 36px;
+                    text-align: left;
+                    a{
+                        color: $color1;
+                    }
+                }
+                @include width1{
+                    flex-direction: column;
+                    p{
+                        text-align: center;
+                        width:100%;
+                    }
+                }
+            }
+        }
+
+    }
+    #Batteries-Kinds{
+        margin-bottom: 1%;
+        h2{
+            text-align: center;
+            font:36px $mainFont;
+            color:$color1;
+        }
+        div{
+            margin-top:5%;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px ,1fr));
+            grid-column-gap: 10px;
+            grid-row-gap:10px;
+            .Battery-card{
+                @include card;
+                
+            }
+                
+        }
+    }
+    #Charge{
+        @include flex;
+        flex-direction: column;
+        h2{
+            text-align: center;
+            font:36px $mainFont;
+            color:$color1;
+        }
+        div{
+            @include flex;
+            flex-direction: column;
+            img{
+                height:400px;
+                width:auto;
+                @include width3{
+                    height:200px;
+                }
+            }
+           h3{
+               text-align: center;
+               font:$mainFont;
+               font-weight: bold;
+           }
+        }
+    }
+    #gifs{
+        @include flex;
+        flex-direction: column;
+        margin-bottom: 1%;
+        p{
+            font: 18px $secondFont;
+        }
+        div{
+            @include flex;
+            flex-direction: row;
+            justify-content: space-around;
+            img{
+                width:40%;
+            }
+        }
+    }
+}
+footer{
+    background-color: #000000;
+    padding-top:5%;
+    height: 200px;;
+    h2{
+        color:white;
+        text-align: center;
+    }
+    ol{
+        color: white;
+    }
+}

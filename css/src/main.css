@@ -1,0 +1,324 @@
+header nav {
+  position: fixed;
+}
+
+header nav .navbar-brand {
+  margin-right: 10%;
+  font: 28px myriad;
+}
+
+header nav ul {
+  width: 100%;
+}
+
+header nav ul li {
+  font: 20px sans-serif;
+  width: 100%;
+}
+
+main #slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1% 0% 0% 0%;
+}
+
+main #slider img {
+  width: 25%;
+  height: auto;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+main #Batteries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5%;
+}
+
+main #Batteries .battery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1%;
+}
+
+main #Batteries .battery h2 {
+  font: 36px myriad;
+  color: #0460D9;
+}
+
+main #Batteries .battery div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #Batteries .battery div img {
+  height: 230px;
+  width: auto;
+  border-radius: 5px;
+}
+
+main #Batteries .battery div p {
+  width: 50%;
+  font: 22px sans-serif;
+  line-height: 36px;
+  text-align: left;
+}
+
+main #Batteries .battery div p a {
+  color: #0460D9;
+}
+
+@media (max-width: 1200px) {
+  main #Batteries .battery div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #Batteries .battery div p {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+main #Batteries-Kinds {
+  margin-bottom: 1%;
+}
+
+main #Batteries-Kinds h2 {
+  text-align: center;
+  font: 36px myriad;
+  color: #0460D9;
+}
+
+main #Batteries-Kinds div {
+  margin-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+main #Batteries-Kinds div .Battery-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(148, 148, 148, 0.041);
+  cursor: pointer;
+}
+
+main #Batteries-Kinds div .Battery-card:hover {
+  -webkit-box-shadow: 0px 1px 3px 0px black;
+          box-shadow: 0px 1px 3px 0px black;
+}
+
+main #Batteries-Kinds div .Battery-card img {
+  width: auto;
+  height: 200px;
+}
+
+main #Batteries-Kinds div .Battery-card h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #2e2e2e;
+  text-align: center;
+}
+
+main #Batteries-Kinds div .Battery-card h4 {
+  font-size: 18px;
+  color: #0597F2;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+main #Charge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #Charge h2 {
+  text-align: center;
+  font: 36px myriad;
+  color: #0460D9;
+}
+
+main #Charge div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #Charge div img {
+  height: 400px;
+  width: auto;
+}
+
+@media (max-width: 769px) {
+  main #Charge div img {
+    height: 200px;
+  }
+}
+
+main #Charge div h3 {
+  text-align: center;
+  font: myriad;
+  font-weight: bold;
+}
+
+main #gifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1%;
+}
+
+main #gifs p {
+  font: 18px sans-serif;
+}
+
+main #gifs div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #gifs div img {
+  width: 40%;
+}
+
+footer {
+  background-color: #000000;
+  padding-top: 5%;
+  height: 200px;
+}
+
+footer h2 {
+  color: white;
+  text-align: center;
+}
+
+footer ol {
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.my-container {
+  padding: 0 10% 0 10%;
+}
+
+.hr {
+  height: 1px;
+  background-color: black;
+  width: 80%;
+  margin: 0% 10% 1% 10%;
+}
+/*# sourceMappingURL=main.css.map */
